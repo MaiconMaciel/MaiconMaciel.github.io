@@ -1,0 +1,128 @@
+:root {
+--Yellow: hsl(47, 88%, 63%);
+
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 50%);
+--Black: hsl(0, 0%, 7%);
+}
+
+body {
+  background-color: var(--Yellow);
+  font-family: 'Figtree', monospace;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--White);
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  border-radius: 20px;
+  border: 2px solid var(--Black);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 1);
+
+}
+
+.banner {
+  border-radius: 10px;
+  margin: 20px 20px 0 20px;
+
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  width: 10%;
+}
+
+.profile p {
+  margin: 10px;
+}
+
+.learning {
+  display: inline-block;
+  font-weight: 800;
+  background-color: var(--Yellow);
+  padding: 10px;
+  border-radius: 10px;
+}
+.description{
+  color: var(--Grey);
+}
+.text {
+  margin: 20px;
+}
+.text h1:hover {
+  cursor: pointer;
+  color: var(--Yellow);
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 300px;
+  }
+  .banner{
+    margin: 10px 10px 0 10px;
+  }
+  .text {
+    margin: 10px 10px 0 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 250px;
+  }
+  .banner{
+    margin: 10px 10px 0 10px;
+  }
+  .text {
+    margin: 10px 10px 0 10px;
+    line-height: 1.6rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 250px;
+  }
+  .banner{
+    margin: 10px 10px 0 10px;
+  }
+  .text {
+    font-size: .8rem;
+  }
+}
+@media (max-width: 275px) {
+  .card {
+    width: 200px;
+  }
+  .banner{
+    margin: 10px 10px 0 10px;
+  }
+  .text {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+@media (max-width: 220px) {
+  .card {
+    width: 170px;
+  }
+  .banner{
+    margin: 10px 10px 0 10px;
+  }
+  .text {
+    font-size: .8rem;
+    text-align: center;
+  }
+}
